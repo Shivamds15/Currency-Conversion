@@ -1,6 +1,6 @@
 # Currency Converter
 
-A simple currency converter web application that allows users to convert amounts between various currencies. The application fetches real-time currency exchange rates using an API and displays the converted amount. 
+A simple currency converter web application that allows users to convert amounts between various currencies. The application fetches real-time currency exchange rates using an API and displays the converted amount. [Run](https://shivamds15.github.io/Currency-Conversion/)
 
 ## Features
 
@@ -9,6 +9,10 @@ A simple currency converter web application that allows users to convert amounts
 - Display flags of selected currencies.
 - Responsive design for different screen sizes.
 
+## Screenshots
+
+![Currency Converter Screenshot](home.jpg)
+
 ## Technologies Used
 
 - HTML
@@ -16,14 +20,6 @@ A simple currency converter web application that allows users to convert amounts
 - JavaScript
 - API
 - JSON
-
-## Live Demo
-
-[Live Demo](https://shivamds15.github.io/Currency-Conversion/)
-
-## Screenshots
-
-![Currency Converter Screenshot](home.jpg)
 
 ### Prerequisites
 
@@ -47,7 +43,7 @@ A simple currency converter web application that allows users to convert amounts
 
 ## Project Structure
 
-```plaintext
+```
 Currency-Conversion/
 │
 ├── index.html        # The main HTML file
