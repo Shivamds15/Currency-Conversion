@@ -1,0 +1,190 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.converter {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.converter:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00796b;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00796b;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+}
+
+.input-group input{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #004d40;
+    outline: none; /* shivam */  
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
+}
+
+.currency-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5em;
+}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.select-wrapper img {
+    position: absolute;
+    right: 1.5em;
+    width: 45px;
+    height: 45px;
+}
+
+.input-group select option {
+    background-color: #ffffff;
+    color: #00796b;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.input-group select option:hover {
+    background-color: #e0f2f1;
+    color: #004d40;
+}
+.input-group select option:checked {
+    background-color: #b2dfdb;
+    font-weight: bold;
+    color: #004d40;
+}
+
+
+button {
+    padding: 15px 30px;
+    background-color: #00796b;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00796b;
+    transition: opacity 0.5s ease;
+    letter-spacing: 4px;
+}
+
+.result.show {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .converter {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-group input,
+    .input-group select,
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .currency-group {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .select-wrapper img {
+        right: 1.5em;
+        height: 30px;
+        width: 30px;
+    }
+}

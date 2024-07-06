@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shivam Singh">
+    <meta name="date" content="2024-07-06">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h1>Currency Converter</h1>
+            <form id="converter-form">
+                <div class="input-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" class="useramt" value="1" id="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="currency-group">
+                    <div class="input-group">
+                        <label for="from-currency">From:</label>
+                        <div class="select-wrapper">
+                            <select name="from" id="from-currency" required>
+                            </select>
+                            <img src="https://flagsapi.com/US/shiny/64.png" alt="USD" id="from-flag">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="to-currency">To:</label>
+                        <div class="select-wrapper">
+                            <select name="to" id="to-currency" required>
+                            </select>
+                            <img src="https://flagsapi.com/IN/shiny/64.png" alt="USD" id="to-flag">
+                        </div>
+                    </div>
+                </div>
+                <button class="convbtn" type="submit">CONVERT</button>
+            </form>
+            <div class="result" id="result">
+                <p><span id="converted-amount">Converted Result</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="countrylist.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
